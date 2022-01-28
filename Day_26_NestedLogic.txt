@@ -1,0 +1,41 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int date,dueDate,month,dueMonth,year,dueYear;
+    cin>>date>>month>>year;
+    
+    cin>>dueDate>>dueMonth>>dueYear;
+    
+    if(year > dueYear)
+    {
+        cout << "10000";
+    }
+    else if(year == dueYear)
+    {
+        if(month > dueMonth)
+        {
+            cout << (month - dueMonth) * 500;
+        }
+        else if(month == dueMonth)
+        {
+            if(date > dueDate)
+            {
+                cout << (date - dueDate)* 15;
+            }
+        }
+        else {
+        cout << '0';
+        }
+    }
+    else {
+    cout << '0';
+    }
+    return 0;
+}
