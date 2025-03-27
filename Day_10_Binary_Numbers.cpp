@@ -1,13 +1,7 @@
-/*We Don't require to find the decimal to binary since the question is asking only the repeated 1
-*/
-
 #include <bits/stdc++.h>
-
 using namespace std;
 
-
-
-int main()
+int main() 
 {
     int n;
     cin >> n;
